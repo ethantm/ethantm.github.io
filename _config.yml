@@ -12,7 +12,7 @@
 
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
@@ -92,7 +92,7 @@ social:
 
 # Analytics
 analytics:
-  provider               : "google-universal" # false (default), "google", "google-universal", "custom"
+  provider               : "google" # false (default), "google", "google-universal", "custom"
   google:
     tracking_id          : UA-123126822-1
     anonymize_ip         : false # true, false (default)
@@ -102,7 +102,7 @@ analytics:
 author:
   name             : "Ethan Martinez"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Studying computer science. React native developer."
+  bio              : "Computer science student. React native developer. Technologist."
   location         : #""
   email            :
   uri              :
@@ -197,8 +197,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 20 # amount of posts to show
-paginate_path: /page:num/
+paginate: 10 # amount of posts to show
+paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 

@@ -179,7 +179,8 @@
   display: flex;
   -webkit-box-align: center;
   align-items: center;
-  background: $footer-background-color; //background-color
+  //background: $footer-background-color;
+  background: $background-color;
 
   a {
     display: block;
