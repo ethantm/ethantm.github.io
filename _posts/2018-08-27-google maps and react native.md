@@ -1,16 +1,18 @@
 ---
 layout: single
 classes: wide
-title: How to add awesome maps to a react native app 🗺️
+title: How to create distinct and engaging react native maps 🗺️
 date: 2018-8-27
 toc: true
 toc_label: "Contents"
 toc_sticky: false
 excerpt: "🔥 Learn how to change the **style** of a map and create **search boxes**"
+header:
+  overlay_color: "#000000"
 ---
 
 This post will teach you how to change the **style (colors and other visual elements)** of a react native map.
-You will also learn how to use **callouts** to add **search boxes** and other components to a map.
+You will also learn how to use **callouts** to add a **search box** to a map.
 
 ### Get a map
 
@@ -43,16 +45,23 @@ import MapView from 'react-native-maps';
 
 Verify that the map works and move on.
 
-### Creating the style
+### Choosing the style
 
 According to the [MapView documentation](https://github.com/react-community/react-native-maps/blob/master/docs/mapview.md) you can add a custom style to a map with the prop **customMapStyle**. This prop accepts an **array** which contains the custom style. To generate a custom style go to the [Google Maps Styling Wizard](https://mapstyle.withgoogle.com/).
 
-In this website you can change the color of text, roads, and all sorts of elements. This advanced editing is available once you click more options at the bottom of the page. You can also use the basic editor and select a theme from the six basic ones and adjust the density of features.
+With the Google Maps Styling Wizard you can create a unique style for your react native map. Using the basic editor you can choose from six themes and change the density of roads, landmarks, and labels. Click "More Options" and you will be presented with the ultimate Styling Wizard for Google Maps.
 
-Once you have your custom style, click finish and copy the JSON. Put the JSON in your app and add it to customMapStyle. Done.
+If will briefly go over the editor. A good feature for experimenting with the editor options is the Road since any changes that you make will be immediately visible.  Click on Road and then click on Fill. Now you can change the color, weight, saturation, and lightness of the different elements that make up the Road such as labels and geometry.
+
+<img src="/assets/images/1/1.png" alt="Editor"/>
+
+Once you have spent countless agonizing days creating the perfect style for your map click **FINISH and copy the JSON**. Or just select one of the basic themes and click finish. Now, put this in a variable. And finally **set the customMapStyle prop** of your MapView to this variable.
 
 ```javascript
-var mapStyle = [] // too long to show
+var mapStyle = [
+  { "elementType": "geometry", "stylers": [ { "color": "#f5f5f5" } ] },
+  { "elementType": "labels.icon", "stylers": [ { "visibility": "off" } ] },
+  // and it goes on and on
 ```
 
 ```javascript
@@ -62,13 +71,13 @@ var mapStyle = [] // too long to show
   />
 ```
 
-An example of a custom map style:
+Here is an example of a custom map style:
 
-<img src="/assets/images/splash/p2.png" alt="Example map" width="300"/>
+<img src="/assets/images/1/2.png" alt="Example map" width="300"/>
 
-### Search Boxes and Callouts
+### Creating a search box with callouts
 
-You can use the Callout component to add components to the map. Callouts can be used to create a search box for the map. **First** place a callout next to the MapView. By next I mean inside the same view.
+You can use the Callout component to add components to the map. **First** place a callout next to the MapView. By next I mean inside the same view.
 
 ```javascript
 <View>
@@ -124,8 +133,8 @@ calloutSearch: {
 
 This search box will look like this:
 
-<img src="/assets/images/splash/p3.png" alt="Example map with search box" width="300"/>
+<img src="/assets/images/1/3.png" alt="Example map with search box" width="300"/>
 
 ### Conclusion
 
-You have learned how to change the style of a react native map. You've also discovered the power of callouts. Some next steps would be to look at the documentation of MapView and **experiment** with the props and settings of your map. As for Callouts, you can experiment with different components and make the map more interactive. Some ideas for callouts: custom location button, different search modes activated by choosing from a drop down menu, list that shows recent searches, back button, side menu, show nearby coffee shops in a list.
+You have learned how to change the style of a react native map. You've also discovered the power of callouts. I will leave you with some next steps for further customization of maps in react native. **Experiment** with the props of MapView. Some ideas for callouts: location button, drop down menus and different search modes, recent searches, and a side menu.
