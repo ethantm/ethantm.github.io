@@ -3,7 +3,8 @@
    ========================================================================== */
 
 .masthead {
-  background-color: $footer-background-color; // nothing before
+  //background-color: $footer-background-color; // nothing before
+  // alsto navigation.scss: 182
   position: relative;
   border-bottom: 1px solid $border-color;
   -webkit-animation: $intro-transition;

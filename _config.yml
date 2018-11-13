@@ -10,17 +10,19 @@
 # Review documentation to determine if you should use `theme` or `remote_theme`
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 
+environment: production
+
 # theme                  : "minimal-mistakes-jekyll"
 remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "sunrise" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
 locale                   : "en-US"
-title                    : "ȩ͈̜̀͑͆ṫ̮̖͛̕͜ḫ̘̯͒́̚a͍̬̺͊̔͘ņ̖̜͛̉͝t̻͙̝̄̓͊m̙̯̳͐̈̈'͇̠̣̽͊͝ş͎̫̃́̒ ̘̘̪̓͗̔b̝̞͈̉̀͐l̻̱̫̈͑̆ọ͖̱̈́̚̚g̞͇͖̓̂͆"
+title                    : "ȩ͈̜̀͑͆ṫ̮̖͛̕͜ḫ̘̯͒́̚a͍̬̺͊̔͘ņ̖̜͛̉͝t̻͙̝̄̓͊m̙̯̳͐̈̈ "
 title_separator          : "-"
 name                     : "Ethan Martinez"
 description              : "ethantm's blog"
-url                      : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://ethantm.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "ethantm/ethantm.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
@@ -102,9 +104,9 @@ analytics:
 author:
   name             : "Ethan Martinez"
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "Studying computer science. React native developer."
+  bio              : "Computer science student. React native developer. Technologist."
   location         : #""
-  email            :
+  email            : "blankdevelopment00@gmail.com"
   uri              :
   home             : # null (default), "absolute or relative url to link to author home"
   bitbucket        :
@@ -197,8 +199,8 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 20 # amount of posts to show
-paginate_path: /page:num/
+paginate: 10 # amount of posts to show
+paginate_path: /blog/page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
