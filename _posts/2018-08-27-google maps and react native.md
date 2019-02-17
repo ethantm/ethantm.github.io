@@ -1,14 +1,13 @@
 ---
-layout: single
-classes: wide
+layout: post
 title: How to create distinct and engaging react native maps 🗺️
 date: 2018-8-27
-toc: true
-toc_label: "Contents"
-toc_sticky: false
-excerpt: "🔥 Learn how to change the **style** of a map and create **search boxes**"
-header:
-  overlay_color: "#000000"
+description: "🔥 Learn how to change the **style** of a map and create **search boxes**"
+tag:
+- react native
+category: blog
+author: ethan
+star: true
 ---
 
 This post will teach you how to change the **style (colors and other visual elements)** of a react native map.
@@ -53,7 +52,7 @@ With the Google Maps Styling Wizard you can create a unique style for your react
 
 If will briefly go over the editor. A good feature for experimenting with the editor options is the Road since any changes that you make will be immediately visible.  Click on Road and then click on Fill. Now you can change the color, weight, saturation, and lightness of the different elements that make up the Road such as labels and geometry.
 
-<img src="/assets/images/1/1.png" alt="Editor"/>
+<img src="/assets/blog/2018-08-27-google maps and react native/1.png" alt="Editor"/>
 
 Once you have spent countless agonizing days creating the perfect style for your map click **FINISH and copy the JSON**. Or just select one of the basic themes and click finish. Now, put this in a variable. And finally **set the customMapStyle prop** of your MapView to this variable.
 
@@ -73,7 +72,7 @@ var mapStyle = [
 
 Here is an example of a custom map style:
 
-<img src="/assets/images/1/2.png" alt="Example map" width="300"/>
+<img src="/assets/blog/2018-08-27-google maps and react native/2.png" alt="Example map" width="300"/>
 
 ### Creating a search box with callouts
 
@@ -133,7 +132,7 @@ calloutSearch: {
 
 This search box will look like this:
 
-<img src="/assets/images/1/3.png" alt="Example map with search box" width="300"/>
+<img src="/assets/blog/2018-08-27-google maps and react native/3.png" alt="Example map with search box" width="300"/>
 
 ### Conclusion
 
